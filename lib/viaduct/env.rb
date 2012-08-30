@@ -1,4 +1,4 @@
-module Middleware
+module Viaduct
   module Env
     # A middleware which just sets up the environment with some
     # options which are passed to it.

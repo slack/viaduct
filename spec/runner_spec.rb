@@ -1,4 +1,6 @@
-describe Middleware::Runner do
+require 'spec_helper'
+
+describe Viaduct::Runner do
   let(:instance) { described_class.new }
 
   it "should raise an error if an invalid callable is given" do

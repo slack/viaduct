@@ -1,4 +1,4 @@
-require 'middleware'
+require 'viaduct'
 require 'pp'
 
 class BasicMiddleware
@@ -49,7 +49,7 @@ class Instance
   attr_accessor :provisioned_id
 end
 
-app = Middleware::Builder.new do
+app = Viaduct::Builder.new do
   use SimpleThing
   use InstanceProvisioner
   use Raiser
@@ -57,6 +57,6 @@ end
 
 instance = Instance.new(1)
 
-Middleware::Runner.new.run(app, instance: instance, raise_up: true)
+Viaduct::Runner.new.run(app, instance: instance, raise_up: true)
 
 pp instance

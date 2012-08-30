@@ -1,4 +1,4 @@
-describe Middleware::Warden do
+describe Viaduct::Warden do
   let(:data) { { :data => [] } }
   let(:instance) { described_class.new }
 

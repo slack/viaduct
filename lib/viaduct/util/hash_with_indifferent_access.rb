@@ -1,4 +1,4 @@
-module Middleware
+module Viaduct
   module Util
     # A hash with indifferent access. Mostly taken from Thor/Rails (thanks).
     # Normally I'm not a fan of using an indifferent access hash since Symbols

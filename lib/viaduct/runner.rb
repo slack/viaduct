@@ -1,6 +1,6 @@
 require 'logger'
 
-module Middleware
+module Viaduct
   class Runner
     def initialize(globals=nil, &block)
       @globals      = globals || {}

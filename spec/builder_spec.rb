@@ -1,6 +1,6 @@
-require_relative '../lib/middleware'
+require 'spec_helper'
 
-describe Middleware::Builder do
+describe Viaduct::Builder do
   let(:data) { { :data => [] } }
   let(:instance) { described_class.new }
 

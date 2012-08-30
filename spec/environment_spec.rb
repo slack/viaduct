@@ -1,4 +1,4 @@
-describe Middleware::Environment do
+describe Viaduct::Environment do
   let(:instance) { described_class.new }
 
   it "should be a hash" do

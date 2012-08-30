@@ -1,6 +1,6 @@
-require "middleware/util/hash_with_indifferent_access"
+require "viaduct/util/hash_with_indifferent_access"
 
-describe Middleware::Util::HashWithIndifferentAccess do
+describe Viaduct::Util::HashWithIndifferentAccess do
   let(:instance) { described_class.new }
 
   it "is a Hash" do

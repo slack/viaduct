@@ -1,4 +1,4 @@
-module Middleware
+module Viaduct
   class Builder
     # Initializes the builder. An optional block can be passed which
     # will be evaluated in the context of the instance.
@@ -101,12 +101,12 @@ module Middleware
 
     # Converts the builder stack to a runnable action sequence.
     #
-    # @param [Vagrant::Action::Environment] env The action environment
+    # @param [Viaduct::Environment] env The action environment
     # @return [Object] A callable object
     def to_app(env)
       # Wrap the middleware stack with the Warden to provide a consistent
       # and predictable behavior upon exceptions.
-      Middleware::Warden.new(stack.dup, env)
+      Viaduct::Warden.new(stack.dup, env)
     end
   end
 end
