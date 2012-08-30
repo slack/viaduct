@@ -2,8 +2,6 @@ require 'logger'
 
 module Middleware
   class Runner
-    @@reported_interrupt = false
-
     def initialize(globals=nil, &block)
       @globals      = globals || {}
       @lazy_globals = block
