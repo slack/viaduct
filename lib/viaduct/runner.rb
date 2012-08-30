@@ -1,11 +1,8 @@
-require 'logger'
-
 module Viaduct
   class Runner
     def initialize(globals=nil, &block)
       @globals      = globals || {}
       @lazy_globals = block
-      @logger       = Logger.new($stderr)
     end
 
     def run(callable_id, options=nil)
@@ -19,7 +16,6 @@ module Viaduct
       environment.merge!(@lazy_globals.call) if @lazy_globals
       environment.merge!(options || {})
 
-      @logger.info("Running action: #{callable_id}")
       callable.call(environment)
     end
   end
