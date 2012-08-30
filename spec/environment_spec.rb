@@ -7,8 +7,8 @@ describe Viaduct::Environment do
     instance["foo"].should == "bar"
   end
 
-  it "should be a hash accessible by string or symbol" do
+  it "should not support indifferent access" do
     instance["foo"] = "bar"
-    instance[:foo].should == "bar"
+    instance[:foo].should == nil
   end
 end
