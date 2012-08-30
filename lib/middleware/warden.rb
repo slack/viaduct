@@ -37,7 +37,7 @@ module Middleware
         raise
       rescue Exception => e
         @logger.error("Error occurred: #{e}")
-        env["vagrant.error"] = e
+        env["middleware.error"] = e
 
         # Something went horribly wrong. Start the rescue chain then
         # reraise the exception to properly kick us out of limbo here.
