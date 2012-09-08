@@ -57,6 +57,7 @@ end
 
 instance = Instance.new(1)
 
-Viaduct::Runner.new.run(app, instance: instance, raise_up: true)
+result = Viaduct::Runner.new.run(app, instance: instance)
+pp result
 
 pp instance
