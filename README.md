@@ -28,6 +28,11 @@ Or automatically run tests with guard
 
   $ bundle exec guard
 
+## Releasing
+
+    $ gem install gem-release
+    $ gem bump -trv patch
+
 ## Usage
 
 ## Contributing
