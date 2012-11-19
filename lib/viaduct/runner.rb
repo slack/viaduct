@@ -17,6 +17,7 @@ module Viaduct
       environment.merge!(options || {})
 
       callable.call(environment)
+      environment
     end
   end
 end
