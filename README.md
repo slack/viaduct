@@ -4,7 +4,9 @@
 
 Use the middleware pattern in your application.
 
-Extracted from the very excellent [Vagrant](http://vagrantup.com) Mitchell Hashimoto and John Bender
+Extracted from the very excellent [Vagrant](http://vagrantup.com) by Mitchell Hashimoto and John Bender
+
+Mitchell also created the [middlware](https://github.com/mitchellh/middleware) gem, but it did not contain the warden code which is what interested me the most. Thus, viaduct.
 
 ## Installation
 
