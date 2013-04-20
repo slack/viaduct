@@ -17,7 +17,7 @@ module Viaduct
     def initialize(actions, env)
       @stack = []
       @actions = actions.map { |m| finalize_action(m, env) }
-      @logger  = env.has_key?(:logger) ? env[:logger] : Logger.new($stderr)
+      @logger  = env.has_key?(:logger) ? env[:logger] : Logger.new(nil)
     end
 
     def call(env)
